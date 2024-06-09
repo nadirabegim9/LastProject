@@ -157,6 +157,7 @@ USE_L10N = True
 
 USE_I18N = True
 
+AUTH_USER_MODEL = 'mysite.CustomUser'
 
 
 # Static files (CSS, JavaScript, Images)
