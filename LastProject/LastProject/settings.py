@@ -64,7 +64,7 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
-    'django.middleware.locale.LocaleMiddleware',  # Add the missing comma here
+    # 'django.middleware.locale.LocaleMiddleware',  # Add the missing comma here
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -128,22 +128,22 @@ AUTH_PASSWORD_VALIDATORS = [
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
 ]
-
-MODELTRANSLATION_DEFAULT_LANGUAGE = 'ru'
-
-
-# Internationalization
-# https://docs.djangoproject.com/en/5.0/topics/i18n/
-
-LANGUAGE_CODE = 'en'
-
-LANGUAGES= (
-    ('en', 'English'),
-    ('ru', 'Russian'),
-    ('ky', 'Kyrgyz'),
-)
-
-MODELTRANSLATION_LANGUAGES= ('en', 'ru', 'ky')
+#
+# MODELTRANSLATION_DEFAULT_LANGUAGE = 'ru'
+#
+#
+# # Internationalization
+# # https://docs.djangoproject.com/en/5.0/topics/i18n/
+#
+# LANGUAGE_CODE = 'en'
+#
+# LANGUAGES= (
+#     ('en', 'English'),
+#     ('ru', 'Russian'),
+#     ('ky', 'Kyrgyz'),
+# )
+#
+# MODELTRANSLATION_LANGUAGES= ('en', 'ru', 'ky')
 
 
 # Internationalization

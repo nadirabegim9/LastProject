@@ -11,7 +11,7 @@ class FacultySerializer(serializers.ModelSerializer):
 class ProfessorSerializer(serializers.ModelSerializer):
     class Meta:
         model = Professor
-        fields = ['user', 'faculty', 'title', 'bio']
+        fields = '__all__'
 
 
 class StudentSerializer(serializers.ModelSerializer):
