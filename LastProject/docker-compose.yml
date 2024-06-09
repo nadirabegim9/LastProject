@@ -7,7 +7,7 @@ services:
       bash -c "./manage.py collectstatic --noinput && ./manage.py makemigrations && ./manage.py migrate && gunicorn -b 0.0.0.0:8000 LastProject.wsgi:application"
     volumes:
       - .:/LastProject
-      - static_volume:/LastProject/static
+      - static_volume:/LastProject/staticfiles
       - media_volume:/LastProject/media
     ports:
       - "8000:8000"
@@ -29,7 +29,7 @@ services:
     ports:
       - "90:90"
     volumes:
-      - static_volume:/LastProject/static
+      - static_volume:/LastProject/staticfiles
       - media_volume:/LastProject/media
     depends_on:
       - web
